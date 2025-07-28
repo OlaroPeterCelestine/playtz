@@ -158,103 +158,105 @@
             </div>
 
             <!-- Navigation Bar Section -->
-        <!-- Navigation Bar -->
-<div x-data="{ open: false }" class="bg-black text-white shadow-md">
-    <div class="container mx-auto px-4">
-        <nav class="flex items-center justify-between py-4">
-            <!-- Logo -->
-            <a href="#" class="flex-shrink-0">
-                <img src="play.png" alt="Play 102.9 Logo" class="h-20 w-auto md:h-24 max-h-24">
-            </a>
+            <div x-data="{ open: false }" class="bg-black text-white shadow-md">
+                <div class="container mx-auto px-4">
+                    <nav class="flex items-center justify-between py-4">
+                        <!-- Logo -->
+                        <a href="#" class="flex-shrink-0">
+                            <img src="play.png" alt="Play 102.9 Logo" class="h-20 w-auto md:h-24 max-h-24">
+                        </a>
 
-            <!-- Right Side Content -->
-            <div class="flex items-center space-x-4">
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center space-x-8 text-base md:text-lg font-semibold tracking-wide">
-                    <a href="index.html" class="hover:text-red-500 transition-colors">Home</a>
-                    <a href="news.html" class="hover:text-red-500 transition-colors">News</a>
-                    <a href="merch.html" class="hover:text-red-500 transition-colors">Merch</a>
-                    <a href="events.html" class="hover:text-red-500 transition-colors">Events</a>
-                    <a href="gallery.html" class="hover:text-red-500 transition-colors">Gallery</a>
-                    <a href="contact.html" class="hover:text-red-500 transition-colors">Contact Us</a>
-                </div>
+                        <!-- Right Side Content -->
+                        <div class="flex items-center space-x-4">
+                            <!-- Desktop Menu -->
+                            <div
+                                class="hidden md:flex items-center space-x-8 text-base md:text-lg font-semibold tracking-wide">
+                                <a href="#" class="hover:text-red-500 transition-colors">Home</a>
+                                <a href="#" class="hover:text-red-500 transition-colors">News</a>
+                                <a href="#" class="hover:text-red-500 transition-colors">Merch</a>
+                                <a href="#" class="hover:text-red-500 transition-colors">Events</a>
+                                <a href="#" class="hover:text-red-500 transition-colors">Gallery</a>
+                                <a href="#" class="hover:text-red-500 transition-colors">Contact Us</a>
+                            </div>
 
-                <!-- Live Buttons -->
-                <div class="flex items-center space-x-3">
-                    <button
-                        class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-3 sm:px-5 rounded-lg flex items-center space-x-2 shadow-sm transition duration-200">
-                        <i class="fas fa-headphones-alt text-lg"></i>
-                        <span class="hidden sm:inline">Listen Live</span>
-                    </button>
-                    <button
-                        class="border border-white hover:border-red-600 text-white hover:bg-white hover:text-black font-semibold py-2 px-3 sm:px-5 rounded-lg flex items-center space-x-2 shadow-sm transition duration-200">
-                        <i class="fas fa-play-circle text-lg"></i>
-                        <span class="hidden sm:inline">Watch Live</span>
-                    </button>
-                </div>
+                            <!-- Live Buttons -->
+                            <div class="flex items-center space-x-2">
+                                <button
+                                    class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-3 rounded-lg flex items-center space-x-2 shadow-sm transition duration-200 text-sm">
+                                    <i class="fas fa-headphones-alt text-lg"></i>
+                                    <span>Listen Live</span>
+                                </button>
+                                <button
+                                    class="border border-white hover:border-red-600 text-white hover:bg-white hover:text-black font-semibold py-2 px-3 rounded-lg flex items-center space-x-2 shadow-sm transition duration-200 text-sm">
+                                    <i class="fas fa-play-circle text-lg"></i>
+                                    <span>Watch Live</span>
+                                </button>
+                            </div>
 
-                <!-- Mobile Menu Button -->
-                <div class="md:hidden">
-                    <button @click="open = !open" class="text-white focus:outline-none">
-                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16m-7 6h7"></path>
-                        </svg>
-                    </button>
+                            <!-- Mobile Menu Button -->
+                            <div class="md:hidden">
+                                <button @click="open = !open" class="text-white focus:outline-none">
+                                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <!-- Mobile Menu (Drawer) -->
+                    <div x-show="open" @click.away="open = false" class="md:hidden" x-transition>
+                        <div class="pt-2 pb-4 space-y-1">
+                            <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-700 rounded">Home</a>
+                            <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-700 rounded">News</a>
+                            <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-700 rounded">Merch</a>
+                            <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-700 rounded">Events</a>
+                            <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-700 rounded">Gallery</a>
+                            <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-700 rounded">Contact Us</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
-
-        <!-- Mobile Menu (Drawer) -->
-        <div x-show="open" @click.away="open = false" class="md:hidden text-center x-transition">
-            <div class="pt-4 pb-6 flex flex-col items-center space-y-2">
-                <a href="index.html" class="py-2 px-4 text-base font-medium hover:bg-gray-700 hover:text-white rounded transition">Home</a>
-                <a href="news.html" class="py-2 px-4 text-base font-medium hover:bg-gray-700 hover:text-white rounded transition">News</a>
-                <a href="merch.html" class="py-2 px-4 text-base font-medium hover:bg-gray-700 hover:text-white rounded transition">Merch</a>
-                <a href="events.html" class="py-2 px-4 text-base font-medium hover:bg-gray-700 hover:text-white rounded transition">Events</a>
-                <a href="gallery.html" class="py-2 px-4 text-base font-medium hover:bg-gray-700 hover:text-white rounded transition">Gallery</a>
-                <a href="contact.html" class="py-2 px-4 text-base font-medium hover:bg-gray-700 hover:text-white rounded transition">Contact Us</a>
-            </div>
-        </div>
-    </div>
-</div>
         </header>
 
         <main>
-      <section class="relative w-[95%] mx-auto bg-center bg-cover bg-no-repeat aspect-[4/3] sm:aspect-[16/9] lg:aspect-[21/9]"
-         style="background-image: url('HERO.png');">
-  
-  <!-- Dark gradient overlay -->
-  <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+            <section
+                class="relative w-[95%] mx-auto bg-center bg-cover bg-no-repeat aspect-[4/3] sm:aspect-[16/9] lg:aspect-[21/9]"
+                style="background-image: url('HERO.png');">
 
-  <!-- Content -->
-  <div class="absolute inset-0 flex items-end z-10">
-    <div class="container mx-auto px-4 pb-10 sm:pb-14 md:pb-20 text-white">
-      
-      <!-- Responsive Heading -->
-      <h2 class="text-2xl sm:text-2xl md:text-5xl lg:text-5xl font-black uppercase leading-tight max-w-2xl">
-        Diamond Platnumz & Zuchu marry in private ceremony
-      </h2>
+                <!-- Dark gradient overlay -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
 
-      <!-- Responsive Subheading -->
-      <p class="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg lg:text-xl max-w-2xl">
-        Tanzanian star talks about being the biggest thing in the East Africa scene.
-      </p>
+                <!-- Content -->
+                <div class="absolute inset-0 flex items-end z-10">
+                    <div class="container mx-auto px-4 pb-10 sm:pb-14 md:pb-20 text-white">
 
-      <!-- Button -->
-      <div class="mt-6">
-        <a href="#"
-           class="bg-red-600 text-white font-bold py-2 px-5 sm:py-3 sm:px-6 rounded-lg uppercase hover:bg-red-700 transition-colors inline-flex items-center space-x-2 text-sm sm:text-base">
-          <span>Read More</span>
-          <i class="fas fa-arrow-right"></i>
-        </a>
-      </div>
+                        <!-- Responsive Heading -->
+                        <h2
+                            class="text-2xl sm:text-2xl md:text-5xl lg:text-5xl font-black uppercase leading-tight max-w-2xl">
+                            Diamond Platnumz & Zuchu marry in private ceremony
+                        </h2>
 
-    </div>
-  </div>
+                        <!-- Responsive Subheading -->
+                        <p class="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg lg:text-xl max-w-2xl">
+                            Tanzanian star talks about being the biggest thing in the East Africa scene.
+                        </p>
 
-</section>
+                        <!-- Button -->
+                        <div class="mt-6">
+                            <a href="#"
+                                class="bg-red-600 text-white font-bold py-2 px-5 sm:py-3 sm:px-6 rounded-lg uppercase hover:bg-red-700 transition-colors inline-flex items-center space-x-2 text-sm sm:text-base">
+                                <span>Read More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
 
             <div class="relative w-full overflow-hidden my-12">
                 <!-- Inner scrolling content -->
@@ -401,24 +403,23 @@
                         <a href="#" class="font-bold border-b-2 border-red-500">Shop Merch</a>
                     </div>
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                        <div class="bg-gray-900 rounded-lg p-4 text-center">
-                            <img src="images/merch-bucket-hats.jpg" alt="Bucket hats"
-                                class="mx-auto h-48 object-contain mb-4">
+                        <div class=" rounded-lg p-4 text-center">
+                            <img src="HUT.png" alt="Bucket hats" class="mx-auto h-48 object-contain mb-4 rounded-[10%]">
                             <h3 class="text-xl font-bold">Bucket hats</h3>
                             <p class="text-gray-400">Tshs 5000</p>
                         </div>
-                        <div class="bg-gray-900 rounded-lg p-4 text-center">
-                            <img src="images/merch-bottles.jpg" alt="Bottles" class="mx-auto h-48 object-contain mb-4">
+                        <div class=" rounded-lg p-4 text-center">
+                            <img src="BOTTLEE.png" alt="Bottles" class="mx-auto h-48 object-contain mb-4 rounded-[10%]">
                             <h3 class="text-xl font-bold">Bottles</h3>
                             <p class="text-gray-400">Tshs 5000</p>
                         </div>
-                        <div class="bg-gray-900 rounded-lg p-4 text-center">
-                            <img src="images/merch-tees.jpg" alt="Tees" class="mx-auto h-48 object-contain mb-4">
+                        <div class=" rounded-lg p-4 text-center">
+                            <img src="TEE.png" alt="Tees" class="mx-auto h-48 object-contain mb-4 rounded-[10%]">
                             <h3 class="text-xl font-bold">Tees</h3>
                             <p class="text-gray-400">Tshs 5000</p>
                         </div>
-                        <div class="bg-gray-900 rounded-lg p-4 text-center">
-                            <img src="images/merch-bangles.jpg" alt="Bangles" class="mx-auto h-48 object-contain mb-4">
+                        <div class=" rounded-lg p-4 text-center">
+                            <img src="BANGLE.png" alt="Bangles" class="mx-auto h-48 object-contain mb-4 rounded-[10%]">
                             <h3 class="text-xl font-bold">Bangles</h3>
                             <p class="text-gray-400">Tshs 5000</p>
                         </div>
