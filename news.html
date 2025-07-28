@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>102.9 PLAY</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.cdnfonts.com/css/HeadingNowTrial18Heavy" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <style>
+        body {
+
+            background-color: #000;
+            color: #fff;
+        }
+
+        .text-outline-red {
+            text-shadow: -1px -1px 0 #e53e3e, 1px -1px 0 #e53e3e, -1px 1px 0 #e53e3e, 1px 1px 0 #e53e3e;
+        }
+
+        .brand-red-bg {
+            background-color: #ef4444;
+        }
+
+        /* Ticker Animation */
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .marquee-content {
+            animation: marquee 30s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .vertical-text {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            transform: rotate(180deg);
+        }
+
+        .marquee-content {
+            animation: marquee 30s linear infinite;
+        }
+
+        @keyframes scroll-horizontal {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .animate-scroll-horizontal {
+            animation: scroll-horizontal 10s linear infinite;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white">
+
+    <!-- The social media bar -->
+    <aside
+        class="hidden lg:flex fixed left-0 top-0 h-screen w-16 flex-col items-center justify-center bg-transparent z-50">
+        <div class="flex flex-col items-center justify-center flex-grow space-y-8">
+
+            <!-- YouTube -->
+            <a href="#" class="flex flex-col items-center space-y-2 text-white hover:text-red-500 transition-colors">
+                <span class="vertical-text font-sans font-semibold text-xs tracking-wider uppercase underline">
+                    Youtube
+                </span>
+                <i class="fab fa-youtube text-xl"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a href="#" class="flex flex-col items-center space-y-2 text-white hover:text-red-500 transition-colors">
+                <span class="vertical-text font-sans font-semibold text-xs tracking-wider uppercase underline">
+                    Instagram
+                </span>
+                <i class="fab fa-instagram text-xl "></i>
+            </a>
+
+            <!-- Twitter -->
+            <a href="#" class="flex flex-col items-center space-y-2 text-white hover:text-red-500 transition-colors">
+                <span class="vertical-text font-sans font-semibold text-xs tracking-wider uppercase underline">
+                    Twitter
+                </span>
+                <i class="fab fa-x-twitter text-xl"></i>
+            </a>
+
+            <!-- Tik-tok -->
+            <a href="#" class="flex flex-col items-center space-y-2 text-white hover:text-red-500 transition-colors">
+                <span class="vertical-text font-sans font-semibold text-xs tracking-wider uppercase underline">
+                    Tik-tok
+                </span>
+                <i class="fab fa-tiktok text-xl"></i>
+            </a>
+
+            <!-- App Store -->
+            <a href="#" class="flex flex-col items-center space-y-2 text-white hover:text-red-500 transition-colors">
+                <span class="vertical-text font-sans font-semibold text-xs tracking-wider uppercase underline">
+                    App Store
+                </span>
+                <i class="fab fa-app-store-ios text-xl"></i>
+            </a>
+
+            <!-- Play Store -->
+            <a href="#" class="flex flex-col items-center space-y-2 text-white hover:text-red-500 transition-colors">
+                <span class="vertical-text font-sans font-semibold text-xs tracking-wider uppercase underline">
+                    Play Store
+                </span>
+                <i class="fab fa-google-play text-xl"></i>
+            </a>
+
+        </div>
+    </aside>
+
+    <div class="lg:ml-16">
+        <header class="bg-black border-b border-gray-800">
+            <div class="bg-red-600 py-2.5 overflow-hidden whitespace-nowrap">
+                <div class="inline-block marquee-content">
+                    <span class="font-bold mx-8 text-sm tracking-wider uppercase">Afro Vibes Summer Bash in Masaki • Aug
+                        21-27</span>
+                    <span class="font-bold mx-8 text-sm tracking-wider uppercase text-black">Tickets available
+                        now!</span>
+                    <span class="font-bold mx-8 text-sm tracking-wider uppercase">Afro Vibes Summer Bash in Masaki • Aug
+                        21-27</span>
+                    <span class="font-bold mx-8 text-sm tracking-wider uppercase text-black">Tickets available
+                        now!</span>
+                    <span class="font-bold mx-8 text-sm tracking-wider uppercase">Afro Vibes Summer Bash in Masaki • Aug
+                        21-27</span>
+                    <span class="font-bold mx-8 text-sm tracking-wider uppercase text-black">Tickets available
+                        now!</span>
+                    <span class="font-bold mx-8 text-sm tracking-wider uppercase">Afro Vibes Summer Bash in Masaki • Aug
+                        21-27</span>
+                    <span class="font-bold mx-8 text-sm tracking-wider uppercase text-black">Tickets available
+                        now!</span>
+                </div>
+            </div>
+            <div class="container mx-auto px-4">
+                <nav class="flex justify-between items-center py-4">
+                    <div class="flex items-center space-x-2">
+                        <img src="play.png" alt="Play 102.9 Logo" class="h-16">
+                    </div>
+                    <div class="hidden md:flex items-center space-x-8 text-lg font-bold">
+                        <a href="index.html" class="hover:text-red-500">Home</a>
+                        <a href="news.html" class="hover:text-red-500">News</a>
+                        <a href="merch.html" class="hover:text-red-500">Merch</a>
+                        <a href="events.html" class="hover:text-red-500">Events</a>
+                        <a href="contact.html" class="hover:text-red-500">Contact Us</a>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <!-- Listen Button -->
+                        <button
+                            class="brand-red-bg text-white font-bold py-2 px-6 rounded-lg flex items-center space-x-2">
+                            <i class="fas fa-headphones-alt text-lg"></i>
+                            <span>Listen in live</span>
+                        </button>
+
+                        <!-- Watch Button -->
+                        <button
+                            class="border border-white text-white font-bold py-2 px-6 rounded-lg flex items-center space-x-2">
+                            <i class="fas fa-play-circle text-lg"></i>
+                            <span>Watch live feed</span>
+                        </button>
+                        </ </nav>
+                    </div>
+        </header>
+        
+
+    <!-- Main Content -->
+    <div class="lg:pl-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+                
+                <!-- Left Column: Article Content -->
+                <div class="lg:col-span-2">
+                    <article>
+                        <header>
+                            <div class="mb-8">
+                                <img src="HERO.png" alt="Vumbula Uganda Festival crowd" class="w-full h-96 rounded-lg object-cover">
+                            </div>
+                            <h1 class="text-4xl font-extrabold text-white mb-4 leading-tight">
+                                VUMBULA UGANDA FESTIVAL TO MARK 5 YEARS WITH AN UNFORGETTABLE INDEPENDENCE CELEBRATION
+                            </h1>
+                            <div class="flex items-center text-sm text-gray-400 space-x-4 mb-6">
+                                <div>
+                                    <span class="font-bold text-purple-500">EVENTS, LIFESTYLE, NEWS</span>
+                                </div>
+                                <span>•</span>
+                                <span>3 days ago</span>
+                                <span>•</span>
+                                <span>0 Comments</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                </svg>
+                            </div>
+                            
+                        </header>
+                    </article>
+                      <article>
+                        <header>
+                            <div class="mb-8">
+                                <img src="HERO.png" alt="Vumbula Uganda Festival crowd" class="w-full h-96 rounded-lg object-cover">
+                            </div>
+                            <h1 class="text-4xl font-extrabold text-white mb-4 leading-tight">
+                                VUMBULA UGANDA FESTIVAL TO MARK 5 YEARS WITH AN UNFORGETTABLE INDEPENDENCE CELEBRATION
+                            </h1>
+                            <div class="flex items-center text-sm text-gray-400 space-x-4 mb-6">
+                                <div>
+                                    <span class="font-bold text-purple-500">EVENTS, LIFESTYLE, NEWS</span>
+                                </div>
+                                <span>•</span>
+                                <span>3 days ago</span>
+                                <span>•</span>
+                                <span>0 Comments</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                </svg>
+                            </div>
+                            
+                        </header>
+                    </article>
+                      <article>
+                        <header>
+                            <div class="mb-8">
+                                <img src="HERO.png" alt="Vumbula Uganda Festival crowd" class="w-full h-96 rounded-lg object-cover">
+                            </div>
+                            <h1 class="text-4xl font-extrabold text-white mb-4 leading-tight">
+                                VUMBULA UGANDA FESTIVAL TO MARK 5 YEARS WITH AN UNFORGETTABLE INDEPENDENCE CELEBRATION
+                            </h1>
+                            <div class="flex items-center text-sm text-gray-400 space-x-4 mb-6">
+                                <div>
+                                    <span class="font-bold text-purple-500">EVENTS, LIFESTYLE, NEWS</span>
+                                </div>
+                                <span>•</span>
+                                <span>3 days ago</span>
+                                <span>•</span>
+                                <span>0 Comments</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                </svg>
+                            </div>
+                            
+                        </header>
+                    </article>
+                      <article>
+                        <header>
+                            <div class="mb-8">
+                                <img src="HERO.png" alt="Vumbula Uganda Festival crowd" class="w-full h-96 rounded-lg object-cover">
+                            </div>
+                            <h1 class="text-4xl font-extrabold text-white mb-4 leading-tight">
+                                VUMBULA UGANDA FESTIVAL TO MARK 5 YEARS WITH AN UNFORGETTABLE INDEPENDENCE CELEBRATION
+                            </h1>
+                            <div class="flex items-center text-sm text-gray-400 space-x-4 mb-6">
+                                <div>
+                                    <span class="font-bold text-purple-500">EVENTS, LIFESTYLE, NEWS</span>
+                                </div>
+                                <span>•</span>
+                                <span>3 days ago</span>
+                                <span>•</span>
+                                <span>0 Comments</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                </svg>
+                            </div>
+                            
+                        </header>
+                    </article>
+                      <article>
+                        <header>
+                            <div class="mb-8">
+                                <img src="HERO.png" alt="Vumbula Uganda Festival crowd" class="w-full h-96 rounded-lg object-cover">
+                            </div>
+                            <h1 class="text-4xl font-extrabold text-white mb-4 leading-tight">
+                                VUMBULA UGANDA FESTIVAL TO MARK 5 YEARS WITH AN UNFORGETTABLE INDEPENDENCE CELEBRATION
+                            </h1>
+                            <div class="flex items-center text-sm text-gray-400 space-x-4 mb-6">
+                                <div>
+                                    <span class="font-bold text-purple-500">EVENTS, LIFESTYLE, NEWS</span>
+                                </div>
+                                <span>•</span>
+                                <span>3 days ago</span>
+                                <span>•</span>
+                                <span>0 Comments</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                </svg>
+                            </div>
+                            
+                        </header>
+                    </article>
+
+                    <!-- More Stories Section -->
+                  
+                </div>
+
+                <!-- Right Column: Sidebar -->
+                <aside class="lg:col-span-1">
+                    <div class="sticky top-12 space-y-12">
+                        <!-- Search Widget -->
+                        <div>
+                            <h2 class="text-xl font-extrabold text-white mb-4 tracking-widest">SEARCH</h2>
+                            <div class="relative">
+                                <input type="text" placeholder="Search..." class="w-full py-3 pl-12 pr-4 bg-gray-800 border border-gray-600 text-white placeholder-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500">
+                                <div class="absolute inset-y-0 left-0 flex items-center pl-4">
+                                    <svg class="w-5 h-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recent Posts Widget -->
+                        <div>
+                            <h2 class="text-xl font-extrabold text-white mb-6 tracking-widest">RECENT POSTS</h2>
+                            <div class="space-y-6">
+                                <!-- Post 1 -->
+                                <div class="flex space-x-4">
+                                    <img src="HERO.png" alt="Sunday Brunch" class="w-24 h-24 object-cover rounded-md flex-shrink-0">
+                                    <div>
+                                        <p class="text-xs text-gray-400 uppercase"><span class="font-bold">Events, News</span> • July 25, 2025</p>
+                                        <h3 class="font-bold text-md text-white mt-1 leading-tight hover:text-purple-500"><a href="#">TURN UP KAMPALA: LOJAY, VIBEZ NZURI & SUNDAY BRUNCHES YOU'LL LOVE</a></h3>
+                                    </div>
+                                </div>
+                                <!-- Post 2 -->
+                                <div class="flex space-x-4">
+                                     <img src="HERO.png" alt="Festival crowd" class="w-24 h-24 object-cover rounded-md flex-shrink-0">
+                                    <div>
+                                        <p class="text-xs text-gray-400 uppercase"><span class="font-bold">Events, Lifestyle, News</span> • July 25, 2025</p>
+                                        <h3 class="font-bold text-md text-white mt-1 leading-tight hover:text-purple-500"><a href="#">VUMBULA UGANDA FESTIVAL TO MARK 5 YEARS WITH AN UNFORGETTABLE INDEPENDENCE CELEBRATION</a></h3>
+                                    </div>
+                                </div>
+                                
+                                <!-- Post 3 -->
+                                <div class="flex space-x-4">
+                                    <img src="HERO.png" alt="Cantina Fiesta poster" class="w-24 h-24 object-cover rounded-md flex-shrink-0">
+                                    <div>
+                                        <p class="text-xs text-gray-400 uppercase"><span class="font-bold">Events, News</span> • July 25, 2025</p>
+                                        <h3 class="font-bold text-md text-white mt-1 leading-tight hover:text-purple-500"><a href="#">CANTINA FIESTA DRESS CODE: HOW TO SLAY THE WORLD TEQUILA DAY LOOK</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- Back to Top Button -->
+
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+            class="fixed bottom-8 right-8 bg-gray-800 text-white w-12 h-12 rounded-md flex items-center justify-center shadow-lg hover:bg-gray-700 transition-colors border border-gray-600 z-20">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+            </svg>
+        </button>
+
+        <footer class="bg-[#121212] text-white flex flex-col min-h-[30vh]">
+            <div class="container mx-auto px-6 flex-grow pt-12 pb-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+                    <!-- Column 1: All Events Kampala -->
+                    <div class="space-y-4">
+                        <h2 class="text-xl font-bold tracking-wider">
+                            <span class="text-red-500">102.9</span> <span class="text-white">PLAY</span>
+                        </h2>
+                        <p class="text-sm text-gray-400">Tanzania's vibe station</p>
+                        <p class="text-gray-300 leading-relaxed text-xs">
+                            Live from Masaki, Tanzania — 102.9 PLAY brings you the hottest music, real talk, and city
+                            vibes. From events to airwaves, we keep Masaki moving.
+                            <br>urn it up. Live the vibe.
+
+                        </p>
+                    </div>
+
+                    <!-- Column 2: Office -->
+                    <div class="space-y-4">
+                        <h3 class="text-lg font-bold tracking-wider">OFFICE</h3>
+                        <div class="text-gray-300 text-xs space-y-1">
+                            <p>Tanzania</p>
+                            <p> Harambe House, Plot 5 Nyerere avenue,</p>
+                            <p>Daresalam.</p>
+                        </div>
+                        <a href="mailto:info@allevents.ug"
+                            class="text-red-600 underline decoration-red-600 underline-offset-4 hover:text-red-500 transition-smooth text-sm">info@102.9play.tz</a>
+                        <p class="text-xl font-bold tracking-wider pt-2">+255 771 751454</p>
+                    </div>
+
+                    <!-- Column 3: Links -->
+                    <div class="space-y-4">
+                        <h3 class="text-lg font-bold tracking-wider">LINKS</h3>
+                        <ul class="space-y-2 text-sm text-gray-300">
+                            <li><a href="#" class="hover:text-red-500 transition-smooth">Home</a></li>
+                            <li><a href="#" class="hover:text-red-500 transition-smooth">Our Identity</a></li>
+                            <li><a href="#" class="hover:text-red-500 transition-smooth">Our Craft</a></li>
+                            <li><a href="#" class="hover:text-red-500 transition-smooth">News</a></li>
+                            <li><a href="#" class="hover:text-red-500 transition-smooth">Contacts</a></li>
+                            <li><a href="#" class="hover:text-red-500 transition-smooth">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4: Newsletter -->
+                    <div class="space-y-4">
+                        <h3 class="text-lg font-bold tracking-wider">HYPE-MAIL</h3>
+                        <div class="bg-black p-4 text-center rounded-lg shadow-lg">
+                            <h4 class="font-playfair text-2xl mb-4">Don't miss the party!</h4>
+                            <form>
+                                <input type="email" placeholder="Email Address *"
+                                    class="w-full bg-gray-800 text-white p-3 mb-3 border border-gray-700 rounded-md outline-none focus:ring-2 focus:ring-red-500 transition-smooth placeholder-gray-500 text-sm">
+                                <button type="submit"
+                                    class="w-full bg-red-600 text-white font-bold py-3 tracking-widest border border-red-600 rounded-md hover:bg-red-500 transition-smooth text-xs">JOIN
+                                    THE VIBE</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-800 mt-auto">
+                <div class="container mx-auto px-6 py-4 flex items-center">
+                    <!-- Copyright Text -->
+                    <p class="text-gray-500 text-xs mr-auto">102.9 PLAY © 2025. All Rights Reserved.</p>
+
+                    <!-- Social Icons -->
+                    <div class="flex items-center space-x-4 text-white">
+                        <!-- Twitter -->
+                        <a href="#" class="text-blue-400 hover:text-blue-600 transition-smooth">
+                            <i class="fab fa-twitter h-4 w-4"></i>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="#" class="text-pink-500 hover:text-pink-700 transition-smooth">
+                            <i class="fab fa-instagram h-4 w-4"></i>
+                        </a>
+
+                        <!-- YouTube -->
+                        <a href="#" class="text-red-600 hover:text-red-800 transition-smooth">
+                            <i class="fab fa-youtube h-4 w-4"></i>
+                        </a>
+
+                        <!-- TikTok -->
+                        <a href="#" class="text-white hover:text-gray-800 transition-smooth">
+                            <i class="fab fa-tiktok h-4 w-4"></i>
+                        </a>
+
+                        <!-- Telegram -->
+                        <a href="#" class="text-blue-500 hover:text-blue-700 transition-smooth">
+                            <i class="fab fa-telegram h-4 w-4"></i>
+                        </a>
+
+                        <!-- Facebook -->
+                        <a href="#" class="text-blue-700 hover:text-blue-900 transition-smooth">
+                            <i class="fab fa-facebook-f h-4 w-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+</body>
+</html>

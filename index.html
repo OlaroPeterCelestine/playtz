@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>102.9 PLAY</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.cdnfonts.com/css/HeadingNowTrial18Heavy" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <style>
+        body {
+
+            background-color: #000;
+            color: #fff;
+        }
+
+        .text-outline-red {
+            text-shadow: -1px -1px 0 #e53e3e, 1px -1px 0 #e53e3e, -1px 1px 0 #e53e3e, 1px 1px 0 #e53e3e;
+        }
+
+        .brand-red-bg {
+            background-color: #ef4444;
+        }
+
+        /* Ticker Animation */
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .marquee-content {
+            animation: marquee 30s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .vertical-text {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            transform: rotate(180deg);
+        }
+
+        .marquee-content {
+            animation: marquee 30s linear infinite;
+        }
+
+        @keyframes scroll-horizontal {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .animate-scroll-horizontal {
+            animation: scroll-horizontal 10s linear infinite;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white">
+
+    <!-- The social media bar -->
+    <aside
+        class="hidden lg:flex fixed left-0 top-0 h-screen w-16 flex-col items-center justify-center bg-transparent z-50">
+        <div class="flex flex-col items-center justify-center flex-grow space-y-8">
+
+            <!-- YouTube -->
+            <a href="#" class="flex flex-col items-center space-y-2 text-white hover:text-red-500 transition-colors">
+                <span class="vertical-text font-sans font-semibold text-xs tracking-wider uppercase underline">
+                    Youtube
+                </span>
+                <i class="fab fa-youtube text-xl"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a href="#" class="flex flex-col items-center space-y-2 text-white hover:text-red-500 transition-colors">
+                <span class="vertical-text font-sans font-semibold text-xs tracking-wider uppercase underline">
+                    Instagram
+                </span>
+                <i class="fab fa-instagram text-xl "></i>
+            </a>
+
+            <!-- Twitter -->
+            <a href="#" class="flex flex-col items-center space-y-2 text-white hover:text-red-500 transition-colors">
+                <span class="vertical-text font-sans font-semibold text-xs tracking-wider uppercase underline">
+                    Twitter
+                </span>
+                <i class="fab fa-x-twitter text-xl"></i>
+            </a>
+
+            <!-- Tik-tok -->
+            <a href="#" class="flex flex-col items-center space-y-2 text-white hover:text-red-500 transition-colors">
+                <span class="vertical-text font-sans font-semibold text-xs tracking-wider uppercase underline">
+                    Tik-tok
+                </span>
+                <i class="fab fa-tiktok text-xl"></i>
+            </a>
+
+            <!-- App Store -->
+            <a href="#" class="flex flex-col items-center space-y-2 text-white hover:text-red-500 transition-colors">
+                <span class="vertical-text font-sans font-semibold text-xs tracking-wider uppercase underline">
+                    App Store
+                </span>
+                <i class="fab fa-app-store-ios text-xl"></i>
+            </a>
+
+            <!-- Play Store -->
+            <a href="#" class="flex flex-col items-center space-y-2 text-white hover:text-red-500 transition-colors">
+                <span class="vertical-text font-sans font-semibold text-xs tracking-wider uppercase underline">
+                    Play Store
+                </span>
+                <i class="fab fa-google-play text-xl"></i>
+            </a>
+
+        </div>
+    </aside>
+
+    <div class="lg:ml-16">
+        <header class="bg-black border-b border-gray-800">
+            <div class="bg-red-600 py-2.5 overflow-hidden whitespace-nowrap">
+                <div class="inline-block marquee-content">
+                    <span class="font-bold mx-8 text-sm tracking-wider uppercase">Afro Vibes Summer Bash in Masaki • Aug
+                        21-27</span>
+                    <span class="font-bold mx-8 text-sm tracking-wider uppercase text-black">Tickets available
+                        now!</span>
+                    <span class="font-bold mx-8 text-sm tracking-wider uppercase">Afro Vibes Summer Bash in Masaki • Aug
+                        21-27</span>
+                    <span class="font-bold mx-8 text-sm tracking-wider uppercase text-black">Tickets available
+                        now!</span>
+                    <span class="font-bold mx-8 text-sm tracking-wider uppercase">Afro Vibes Summer Bash in Masaki • Aug
+                        21-27</span>
+                    <span class="font-bold mx-8 text-sm tracking-wider uppercase text-black">Tickets available
+                        now!</span>
+                    <span class="font-bold mx-8 text-sm tracking-wider uppercase">Afro Vibes Summer Bash in Masaki • Aug
+                        21-27</span>
+                    <span class="font-bold mx-8 text-sm tracking-wider uppercase text-black">Tickets available
+                        now!</span>
+                </div>
+            </div>
+            <div class="container mx-auto px-4">
+                <nav class="flex justify-between items-center py-4">
+                    <div class="flex items-center space-x-2">
+                        <img src="play.png" alt="Play 102.9 Logo" class="h-16">
+                    </div>
+                    <div class="hidden md:flex items-center space-x-8 text-lg font-bold">
+                        <a href="#" class="hover:text-red-500">Home</a>
+                        <a href="#" class="hover:text-red-500">News</a>
+                        <a href="#" class="hover:text-red-500">Merch</a>
+                        <a href="#" class="hover:text-red-500">Events</a>
+                        <a href="#" class="hover:text-red-500">Gallery</a>
+                        <a href="#" class="hover:text-red-500">Contact Us</a>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <!-- Listen Button -->
+                        <button
+                            class="brand-red-bg text-white font-bold py-2 px-6 rounded-lg flex items-center space-x-2">
+                            <i class="fas fa-headphones-alt text-lg"></i>
+                            <span>Listen in live</span>
+                        </button>
+
+                        <!-- Watch Button -->
+                        <button
+                            class="border border-white text-white font-bold py-2 px-6 rounded-lg flex items-center space-x-2">
+                            <i class="fas fa-play-circle text-lg"></i>
+                            <span>Watch live feed</span>
+                        </button>
+                        </ </nav>
+                    </div>
+        </header>
+
+        <main>
+            <section class="relative h-[700px] w-[95%] mx-auto bg-center bg-cover bg-no-repeat"
+                style="background-image: url('HERO.png');">
+                <!-- Dark gradient overlay -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+
+                <!-- Content -->
+                <div class="container mx-auto px-4 h-full flex flex-col justify-end pb-20 relative z-10">
+                    <h2 class="text-5xl md:text-7xl font-black uppercase">
+                        Diamond Platnumz & Zuchu marry in private ceremony
+                    </h2>
+                    <p class="mt-4 text-xl">
+                        Tanzanian star talks about being the biggest thing in the East Africa scene.
+                    </p>
+                    <div class="mt-8">
+                        <a href="#"
+                            class="brand-red-bg text-white font-bold py-3 px-8 rounded-lg uppercase hover:bg-red-600 transition-colors">
+                            Read More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="relative w-full overflow-hidden my-12">
+                <!-- Inner scrolling content -->
+                <div class="flex gap-12 animate-scroll-horizontal whitespace-nowrap">
+                    <!-- Wide Banner Images -->
+                    <img src="https://i.pinimg.com/736x/99/d1/2b/99d12b9fb7ff7ec88e832e490ba443ef.jpg" alt="Banner 1"
+                        class="w-[80rem] h-[12rem] object-cover  inline-block" />
+                    <img src="https://static.startuptalky.com/2021/11/vodafone_featureimage_startuptalky.png"
+                        alt="Banner 2" class="w-[80rem] h-[12rem] object-cover inline-block" />
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA3VNgnf3wZ2daM00Lb3mc7alRxBkM3aKP4g&s"
+                        alt="Banner 3" class="w-[80rem] h-[12rem] object-cover  inline-block" />
+
+                    <!-- Duplicates for infinite loop -->
+                    <img src="https://tanzaniainvest.com/wp-content/uploads/2016/06/bot-bank-of-tanzania-2016-2017-monetary-policy.gif"
+                        alt="Banner 4" class="w-[80rem] h-[12rem] object-cover  inline-block" />
+                </div>
+            </div>
+
+            <section class="py-12 bg-black">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-4xl font-black text-left mb-8 uppercase text-outline-red">On Air</h2>
+                    <div class="flex flex-wrap justify-around items-center">
+                        <img src="one.png" alt="Amped Up" class="h-24 m-2">
+                        <img src="2.png" alt="The Buzz" class="h-24 m-2">
+                        <img src="3.png" alt="The Big Rise" class="h-24 m-2">
+                        <img src="4.png" alt="The Play Mixx" class="h-24 m-2">
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-12 bg-black text-white">
+                <div class="container mx-auto px-4">
+                    <!-- Header -->
+                    <div class="flex justify-between items-center mb-8">
+                        <h2 class="text-4xl font-black uppercase text-outline-red">Headlines</h2>
+                        <a href="#" class="font-bold border-b-2 border-red-500 hover:text-red-500">More News</a>
+                    </div>
+
+                    <!-- Content Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                        <!-- Left Column -->
+                        <div>
+                            <img src="har.png" alt="Harmonize" class="rounded-lg  w-full object-cover">
+                            <h3 class="text-2xl font-bold mt-4">Harmonize teases new single "Sijalewa"</h3>
+                            <a href="#" class="text-red-500 font-semibold mt-2 inline-block">Read more</a>
+                        </div>
+
+                        <!-- Right Column -->
+                        <div class="ml-5 space-y-16">
+                            <!-- Item 1 -->
+                            <div class="flex items-center space-x-8">
+                                <img src="new.png" alt="Miss Grand Tanzania" class="w-60 h-38 rounded-lg object-cover">
+                                <div class="space-y-2">
+                                    <h3 class="text-xl font-bold">Miss Grand Tanzania – The Journey to Grace &
+                                        Empowerment</h3>
+                                    <a href="#" class="text-red-500 font-semibold inline-block">Read more</a>
+                                </div>
+                            </div>
+
+                            <!-- Item 2 -->
+                            <div class="flex items-center space-x-8">
+                                <img src="few.png" alt="Kili Paul" class="w-60 h-38 rounded-lg object-cover">
+                                <div class="space-y-2">
+                                    <h3 class="text-xl font-bold">Tanzanian social media star Kili Paul wants to marry a
+                                        Malayan woman and settle in Kerala</h3>
+                                    <a href="#" class="text-red-500 font-semibold inline-block">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-12 bg-black">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-4xl font-black text-left mb-8 uppercase text-outline-red">Vibe Check</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="md:col-span-2">
+                            <div class="aspect-w-16 aspect-h-9">
+                                <iframe class="w-full h-96"
+                                    src="https://www.youtube.com/embed/riJbU-6rWgU?autoplay=1&mute=1"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4 border-b-2 border-red-500 pb-2">Latest Episodes</h3>
+                            <div class="space-y-6">
+
+                                <!-- Episode 1 -->
+                                <div class="flex items-start space-x-4">
+                                    <iframe class="w-40 h-24 rounded-lg"
+                                        src="https://www.youtube.com/embed/TlBWu-ZBoOQ?mute=1" title="Community work"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen>
+                                    </iframe>
+                                    <div>
+                                        <h4 class="font-bold">Community work</h4>
+                                        <p class="text-sm text-gray-400">CSR in Masaki with the community</p>
+                                    </div>
+                                </div>
+
+                                <!-- Episode 2 -->
+                                <div class="flex items-start space-x-4">
+                                    <iframe class="w-40 h-24 rounded-lg"
+                                        src="https://www.youtube.com/embed/plgp4PBL_uQ?mute=1" title="Episode Title"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen>
+                                    </iframe>
+                                    <div>
+                                        <h4 class="font-bold">Episode Title</h4>
+                                        <p class="text-sm text-gray-400">Short description of this episode.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Episode 3 -->
+                                <div class="flex items-start space-x-4">
+                                    <iframe class="w-40 h-24 rounded-lg"
+                                        src="https://www.youtube.com/embed/y3tUqAM0Pvs?mute=1" title="Goat Talk"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen>
+                                    </iframe>
+                                    <div>
+                                        <h4 class="font-bold">Goat Talk</h4>
+                                        <p class="text-sm text-gray-400">Best of the entertainment buzz</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-12 bg-black">
+                <div class="container mx-auto px-4">
+                    <div class="flex justify-between items-center mb-8">
+                        <h2 class="text-4xl font-black uppercase text-outline-red">Merch</h2>
+                        <a href="#" class="font-bold border-b-2 border-red-500">Shop Merch</a>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                        <div class="bg-gray-900 rounded-lg p-4 text-center">
+                            <img src="images/merch-bucket-hats.jpg" alt="Bucket hats"
+                                class="mx-auto h-48 object-contain mb-4">
+                            <h3 class="text-xl font-bold">Bucket hats</h3>
+                            <p class="text-gray-400">Tshs 5000</p>
+                        </div>
+                        <div class="bg-gray-900 rounded-lg p-4 text-center">
+                            <img src="images/merch-bottles.jpg" alt="Bottles" class="mx-auto h-48 object-contain mb-4">
+                            <h3 class="text-xl font-bold">Bottles</h3>
+                            <p class="text-gray-400">Tshs 5000</p>
+                        </div>
+                        <div class="bg-gray-900 rounded-lg p-4 text-center">
+                            <img src="images/merch-tees.jpg" alt="Tees" class="mx-auto h-48 object-contain mb-4">
+                            <h3 class="text-xl font-bold">Tees</h3>
+                            <p class="text-gray-400">Tshs 5000</p>
+                        </div>
+                        <div class="bg-gray-900 rounded-lg p-4 text-center">
+                            <img src="images/merch-bangles.jpg" alt="Bangles" class="mx-auto h-48 object-contain mb-4">
+                            <h3 class="text-xl font-bold">Bangles</h3>
+                            <p class="text-gray-400">Tshs 5000</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+            class="fixed bottom-8 right-8 bg-gray-800 text-white w-12 h-12 rounded-md flex items-center justify-center shadow-lg hover:bg-gray-700 transition-colors border border-gray-600 z-20">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+            </svg>
+        </button>
+
+        <footer class="bg-[#121212] text-white flex flex-col min-h-[30vh]">
+            <div class="container mx-auto px-6 flex-grow pt-12 pb-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+                    <!-- Column 1: All Events Kampala -->
+                    <div class="space-y-4">
+                        <h2 class="text-xl font-bold tracking-wider">
+                            <span class="text-red-500">102.9</span> <span class="text-white">PLAY</span>
+                        </h2>
+                        <p class="text-sm text-gray-400">Tanzania's vibe station</p>
+                        <p class="text-gray-300 leading-relaxed text-xs">
+                            Live from Masaki, Tanzania — 102.9 PLAY brings you the hottest music, real talk, and city
+                            vibes. From events to airwaves, we keep Masaki moving.
+                            <br>urn it up. Live the vibe.
+
+                        </p>
+                    </div>
+
+                    <!-- Column 2: Office -->
+                    <div class="space-y-4">
+                        <h3 class="text-lg font-bold tracking-wider">OFFICE</h3>
+                        <div class="text-gray-300 text-xs space-y-1">
+                            <p>Tanzania</p>
+                            <p> Harambe House, Plot 5 Nyerere avenue,</p>
+                            <p>Daresalam.</p>
+                        </div>
+                        <a href="mailto:info@allevents.ug"
+                            class="text-red-600 underline decoration-red-600 underline-offset-4 hover:text-red-500 transition-smooth text-sm">info@102.9play.tz</a>
+                        <p class="text-xl font-bold tracking-wider pt-2">+255 771 751454</p>
+                    </div>
+
+                    <!-- Column 3: Links -->
+                    <div class="space-y-4">
+                        <h3 class="text-lg font-bold tracking-wider">LINKS</h3>
+                        <ul class="space-y-2 text-sm text-gray-300">
+                            <li><a href="#" class="hover:text-red-500 transition-smooth">Home</a></li>
+                            <li><a href="#" class="hover:text-red-500 transition-smooth">Our Identity</a></li>
+                            <li><a href="#" class="hover:text-red-500 transition-smooth">Our Craft</a></li>
+                            <li><a href="#" class="hover:text-red-500 transition-smooth">News</a></li>
+                            <li><a href="#" class="hover:text-red-500 transition-smooth">Contacts</a></li>
+                            <li><a href="#" class="hover:text-red-500 transition-smooth">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4: Newsletter -->
+                    <div class="space-y-4">
+                        <h3 class="text-lg font-bold tracking-wider">HYPE-MAIL</h3>
+                        <div class="bg-black p-4 text-center rounded-lg shadow-lg">
+                            <h4 class="font-playfair text-2xl mb-4">Don't miss the party!</h4>
+                            <form>
+                                <input type="email" placeholder="Email Address *"
+                                    class="w-full bg-gray-800 text-white p-3 mb-3 border border-gray-700 rounded-md outline-none focus:ring-2 focus:ring-red-500 transition-smooth placeholder-gray-500 text-sm">
+                                <button type="submit"
+                                    class="w-full bg-red-600 text-white font-bold py-3 tracking-widest border border-red-600 rounded-md hover:bg-red-500 transition-smooth text-xs">JOIN
+                                    THE VIBE</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-800 mt-auto">
+                <div class="container mx-auto px-6 py-4 flex items-center">
+                    <!-- Copyright Text -->
+                    <p class="text-gray-500 text-xs mr-auto">102.9 PLAY © 2025. All Rights Reserved.</p>
+
+                    <!-- Social Icons -->
+                    <div class="flex items-center space-x-4 text-white">
+                        <!-- Twitter -->
+                        <a href="#" class="text-blue-400 hover:text-blue-600 transition-smooth">
+                            <i class="fab fa-twitter h-4 w-4"></i>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="#" class="text-pink-500 hover:text-pink-700 transition-smooth">
+                            <i class="fab fa-instagram h-4 w-4"></i>
+                        </a>
+
+                        <!-- YouTube -->
+                        <a href="#" class="text-red-600 hover:text-red-800 transition-smooth">
+                            <i class="fab fa-youtube h-4 w-4"></i>
+                        </a>
+
+                        <!-- TikTok -->
+                        <a href="#" class="text-white hover:text-gray-800 transition-smooth">
+                            <i class="fab fa-tiktok h-4 w-4"></i>
+                        </a>
+
+                        <!-- Telegram -->
+                        <a href="#" class="text-blue-500 hover:text-blue-700 transition-smooth">
+                            <i class="fab fa-telegram h-4 w-4"></i>
+                        </a>
+
+                        <!-- Facebook -->
+                        <a href="#" class="text-blue-700 hover:text-blue-900 transition-smooth">
+                            <i class="fab fa-facebook-f h-4 w-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

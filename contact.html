@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us & Music Submission - 102.9 PLAY</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        .text-outline-red {
+            text-shadow: -1px -1px 0 #e53e3e, 1px -1px 0 #e53e3e, -1px 1px 0 #e53e3e, 1px 1px 0 #e53e3e;
+        }
+        .brand-red-bg {
+            background-color: #ef4444;
+        }
+        .brand-red-bg:hover {
+            background-color: #dc2626;
+        }
+        .brand-red-text {
+            color: #ef4444;
+        }
+        .vertical-text {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            transform: rotate(180deg);
+        }
+        /* Custom style for the form inputs */
+        .form-input {
+            width: 100%;
+            background-color: #1f2937; /* gray-800 */
+            border: 1px solid #374151; /* gray-700 */
+            border-radius: 0.5rem;
+            padding: 0.75rem;
+            color: #fff;
+            transition: all 0.2s ease-in-out;
+        }
+        .form-input:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px #ef4444;
+            border-color: #ef4444;
+        }
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .marquee-content {
+            animation: marquee 30s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .vertical-text {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            transform: rotate(180deg);
+        }
+
+        .marquee-content {
+            animation: marquee 30s linear infinite;
+        }
+
+        @keyframes scroll-horizontal {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .animate-scroll-horizontal {
+            animation: scroll-horizontal 10s linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+
+    <!-- The social media bar -->
+   <aside
+        class="hidden lg:flex fixed left-0 top-0 h-screen w-16 flex-col items-center justify-center bg-transparent z-50">
+        <div class="flex flex-col items-center justify-center flex-grow space-y-8">
+
+            <!-- YouTube -->
+            <a href="#" class="flex flex-col items-center space-y-2 text-white hover:text-red-500 transition-colors">
+                <span class="vertical-text font-sans font-semibold text-xs tracking-wider uppercase underline">
+                    Youtube
+                </span>
+                <i class="fab fa-youtube text-xl"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a href="#" class="flex flex-col items-center space-y-2 text-white hover:text-red-500 transition-colors">
+                <span class="vertical-text font-sans font-semibold text-xs tracking-wider uppercase underline">
+                    Instagram
+                </span>
+                <i class="fab fa-instagram text-xl "></i>
+            </a>
+
+            <!-- Twitter -->
+            <a href="#" class="flex flex-col items-center space-y-2 text-white hover:text-red-500 transition-colors">
+                <span class="vertical-text font-sans font-semibold text-xs tracking-wider uppercase underline">
+                    Twitter
+                </span>
+                <i class="fab fa-x-twitter text-xl"></i>
+            </a>
+
+            <!-- Tik-tok -->
+            <a href="#" class="flex flex-col items-center space-y-2 text-white hover:text-red-500 transition-colors">
+                <span class="vertical-text font-sans font-semibold text-xs tracking-wider uppercase underline">
+                    Tik-tok
+                </span>
+                <i class="fab fa-tiktok text-xl"></i>
+            </a>
+
+            <!-- App Store -->
+            <a href="#" class="flex flex-col items-center space-y-2 text-white hover:text-red-500 transition-colors">
+                <span class="vertical-text font-sans font-semibold text-xs tracking-wider uppercase underline">
+                    App Store
+                </span>
+                <i class="fab fa-app-store-ios text-xl"></i>
+            </a>
+
+            <!-- Play Store -->
+            <a href="#" class="flex flex-col items-center space-y-2 text-white hover:text-red-500 transition-colors">
+                <span class="vertical-text font-sans font-semibold text-xs tracking-wider uppercase underline">
+                    Play Store
+                </span>
+                <i class="fab fa-google-play text-xl"></i>
+            </a>
+
+        </div>
+    </aside>
+
+    <div class="lg:ml-16">
+        <header class="bg-black border-b border-gray-800">
+            <div class="bg-red-600 py-2.5 overflow-hidden whitespace-nowrap">
+                <div class="inline-block marquee-content">
+                    <span class="font-bold mx-8 text-sm tracking-wider uppercase">Afro Vibes Summer Bash in Masaki • Aug
+                        21-27</span>
+                    <span class="font-bold mx-8 text-sm tracking-wider uppercase text-black">Tickets available
+                        now!</span>
+                    <span class="font-bold mx-8 text-sm tracking-wider uppercase">Afro Vibes Summer Bash in Masaki • Aug
+                        21-27</span>
+                    <span class="font-bold mx-8 text-sm tracking-wider uppercase text-black">Tickets available
+                        now!</span>
+                    <span class="font-bold mx-8 text-sm tracking-wider uppercase">Afro Vibes Summer Bash in Masaki • Aug
+                        21-27</span>
+                    <span class="font-bold mx-8 text-sm tracking-wider uppercase text-black">Tickets available
+                        now!</span>
+                    <span class="font-bold mx-8 text-sm tracking-wider uppercase">Afro Vibes Summer Bash in Masaki • Aug
+                        21-27</span>
+                    <span class="font-bold mx-8 text-sm tracking-wider uppercase text-black">Tickets available
+                        now!</span>
+                </div>
+            </div>
+            <div class="container mx-auto px-4">
+                <nav class="flex justify-between items-center py-4">
+                    <div class="flex items-center space-x-2">
+                        <img src="play.png" alt="Play 102.9 Logo" class="h-16">
+                    </div>
+                    <div class="hidden md:flex items-center space-x-8 text-lg font-bold">
+                        <a href="#" class="hover:text-red-500">Home</a>
+                        <a href="#" class="hover:text-red-500">News</a>
+                        <a href="#" class="hover:text-red-500">Merch</a>
+                        <a href="#" class="hover:text-red-500">Events</a>
+                        <a href="#" class="hover:text-red-500">Gallery</a>
+                        <a href="#" class="hover:text-red-500">Contact Us</a>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <!-- Listen Button -->
+                        <button
+                            class="brand-red-bg text-white font-bold py-2 px-6 rounded-lg flex items-center space-x-2">
+                            <i class="fas fa-headphones-alt text-lg"></i>
+                            <span>Listen in live</span>
+                        </button>
+
+                        <!-- Watch Button -->
+                        <button
+                            class="border border-white text-white font-bold py-2 px-6 rounded-lg flex items-center space-x-2">
+                            <i class="fas fa-play-circle text-lg"></i>
+                            <span>Watch live feed</span>
+                        </button>
+                        </ </nav>
+                    </div>
+        </header>
+
+
+        <main>
+            <section class="relative h-[400px] bg-cover bg-center" style="background-image: url('https://raw.githubusercontent.com/Lead-Magnet/landing-page-images/main/HERO.png');">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+                <div class="container mx-auto px-4 h-full flex flex-col justify-center items-center text-center relative z-10">
+                    <h1 class="text-5xl md:text-7xl font-black uppercase text-outline-red">Get In Touch</h1>
+                    <p class="mt-4 text-xl max-w-2xl">Have a question, feedback, or a hot new track? We're all ears. Connect with the 102.9 PLAY team below.</p>
+                </div>
+            </section>
+
+            <section class="py-16 bg-black">
+                <div class="container mx-auto px-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                        
+                        <!-- Unified Contact Form -->
+                        <div>
+                            <h2 class="text-4xl font-black uppercase text-outline-red mb-6">Send A Message</h2>
+                            <form action="#" method="POST" class="space-y-6">
+                                <div>
+                                    <label for="contact-reason" class="block text-sm font-bold uppercase tracking-wider mb-2">Reason for Contact</label>
+                                    <select id="contact-reason" name="contact-reason" class="form-input">
+                                        <option value="general-inquiry">General Inquiry</option>
+                                        <option value="music-submission">Music Submission</option>
+                                    </select>
+                                </div>
+
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                    <div>
+                                        <label for="name" class="block text-sm font-bold uppercase tracking-wider mb-2">Full Name *</label>
+                                        <input type="text" name="name" id="name" class="form-input" required>
+                                    </div>
+                                    <div>
+                                        <label for="email" class="block text-sm font-bold uppercase tracking-wider mb-2">Email Address *</label>
+                                        <input type="email" name="email" id="email" class="form-input" required>
+                                    </div>
+                                </div>
+
+                                <!-- Music Submission Fields (Initially Hidden) -->
+                                <div id="music-fields" class="hidden space-y-6">
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                        <div>
+                                            <label for="artist-name" class="block text-sm font-bold uppercase tracking-wider mb-2">Artist Name *</label>
+                                            <input type="text" name="artist-name" id="artist-name" class="form-input">
+                                        </div>
+                                        <div>
+                                            <label for="song-title" class="block text-sm font-bold uppercase tracking-wider mb-2">Song Title *</label>
+                                            <input type="text" name="song-title" id="song-title" class="form-input">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label for="music-link" class="block text-sm font-bold uppercase tracking-wider mb-2">Link to Music (SoundCloud, Dropbox, etc.) *</label>
+                                        <input type="url" name="music-link" id="music-link" placeholder="https://..." class="form-input">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="message" class="block text-sm font-bold uppercase tracking-wider mb-2">Message *</label>
+                                    <textarea name="message" id="message" rows="5" class="form-input" required></textarea>
+                                </div>
+
+                                <div>
+                                    <button type="submit" class="brand-red-bg text-white font-bold py-3 px-8 rounded-lg flex items-center space-x-2 text-lg transition">
+                                        <span>Submit</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Map and Contact Info -->
+                        <div class="space-y-8">
+                             <div class="w-full h-96 rounded-lg overflow-hidden border-2 border-gray-800">
+                                 <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127673.23924719668!2d32.51860794931637!3d0.3134932822168987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbc0f96e80fd7%3A0x4632881b7a69512b!2sKampala%2C%20Uganda!5e0!3m2!1sen!2sus!4v1678886568809!5m2!1sen!2sus"
+                                    width="100%"
+                                    height="100%"
+                                    style="border:0;"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                            <div class="space-y-6">
+                                <div>
+                                    <h3 class="text-2xl font-black uppercase text-outline-red mb-3">Our Studio</h3>
+                                    <div class="text-gray-300 space-y-2">
+                                        <p class="flex items-center space-x-3"><svg class="w-5 h-5 brand-red-text" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg><span>Tanzania, Harambe House, Plot 5 Nyerere avenue,</span></p>
+                                        <p class="flex items-center space-x-3"><svg class="w-5 h-5 brand-red-text" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg><a href="mailto:info@allevents.ug" class="hover:text-red-500">info@102.9play.tz</a></p>
+                                        <p class="flex items-center space-x-3"><svg class="w-5 h-5 brand-red-text" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg><a href="tel:+256771030056" class="hover:text-red-500">+255 771 030056</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        
+      
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+            class="fixed bottom-8 right-8 bg-gray-800 text-white w-12 h-12 rounded-md flex items-center justify-center shadow-lg hover:bg-gray-700 transition-colors border border-gray-600 z-20">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+            </svg>
+        </button>
+
+        <footer class="bg-[#121212] text-white flex flex-col min-h-[30vh]">
+            <div class="container mx-auto px-6 flex-grow pt-12 pb-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+                    <!-- Column 1: All Events Kampala -->
+                    <div class="space-y-4">
+                        <h2 class="text-xl font-bold tracking-wider">
+                            <span class="text-red-500">102.9</span> <span class="text-white">PLAY</span>
+                        </h2>
+                        <p class="text-sm text-gray-400">Tanzania's vibe station</p>
+                        <p class="text-gray-300 leading-relaxed text-xs">
+                            Live from Masaki, Tanzania — 102.9 PLAY brings you the hottest music, real talk, and city
+                            vibes. From events to airwaves, we keep Masaki moving.
+                            <br>urn it up. Live the vibe.
+
+                        </p>
+                    </div>
+
+                    <!-- Column 2: Office -->
+                    <div class="space-y-4">
+                        <h3 class="text-lg font-bold tracking-wider">OFFICE</h3>
+                        <div class="text-gray-300 text-xs space-y-1">
+                            <p>Tanzania</p>
+                            <p> Harambe House, Plot 5 Nyerere avenue,</p>
+                            <p>Daresalam.</p>
+                        </div>
+                        <a href="mailto:info@allevents.ug"
+                            class="text-red-600 underline decoration-red-600 underline-offset-4 hover:text-red-500 transition-smooth text-sm">info@102.9play.tz</a>
+                        <p class="text-xl font-bold tracking-wider pt-2">+255 771 751454</p>
+                    </div>
+
+                    <!-- Column 3: Links -->
+                    <div class="space-y-4">
+                        <h3 class="text-lg font-bold tracking-wider">LINKS</h3>
+                        <ul class="space-y-2 text-sm text-gray-300">
+                            <li><a href="#" class="hover:text-red-500 transition-smooth">Home</a></li>
+                            <li><a href="#" class="hover:text-red-500 transition-smooth">Our Identity</a></li>
+                            <li><a href="#" class="hover:text-red-500 transition-smooth">Our Craft</a></li>
+                            <li><a href="#" class="hover:text-red-500 transition-smooth">News</a></li>
+                            <li><a href="#" class="hover:text-red-500 transition-smooth">Contacts</a></li>
+                            <li><a href="#" class="hover:text-red-500 transition-smooth">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4: Newsletter -->
+                    <div class="space-y-4">
+                        <h3 class="text-lg font-bold tracking-wider">HYPE-MAIL</h3>
+                        <div class="bg-black p-4 text-center rounded-lg shadow-lg">
+                            <h4 class="font-playfair text-2xl mb-4">Don't miss the party!</h4>
+                            <form>
+                                <input type="email" placeholder="Email Address *"
+                                    class="w-full bg-gray-800 text-white p-3 mb-3 border border-gray-700 rounded-md outline-none focus:ring-2 focus:ring-red-500 transition-smooth placeholder-gray-500 text-sm">
+                                <button type="submit"
+                                    class="w-full bg-red-600 text-white font-bold py-3 tracking-widest border border-red-600 rounded-md hover:bg-red-500 transition-smooth text-xs">JOIN
+                                    THE VIBE</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-800 mt-auto">
+                <div class="container mx-auto px-6 py-4 flex items-center">
+                    <!-- Copyright Text -->
+                    <p class="text-gray-500 text-xs mr-auto">102.9 PLAY © 2025. All Rights Reserved.</p>
+
+                    <!-- Social Icons -->
+                    <div class="flex items-center space-x-4 text-white">
+                        <!-- Twitter -->
+                        <a href="#" class="text-blue-400 hover:text-blue-600 transition-smooth">
+                            <i class="fab fa-twitter h-4 w-4"></i>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="#" class="text-pink-500 hover:text-pink-700 transition-smooth">
+                            <i class="fab fa-instagram h-4 w-4"></i>
+                        </a>
+
+                        <!-- YouTube -->
+                        <a href="#" class="text-red-600 hover:text-red-800 transition-smooth">
+                            <i class="fab fa-youtube h-4 w-4"></i>
+                        </a>
+
+                        <!-- TikTok -->
+                        <a href="#" class="text-white hover:text-gray-800 transition-smooth">
+                            <i class="fab fa-tiktok h-4 w-4"></i>
+                        </a>
+
+                        <!-- Telegram -->
+                        <a href="#" class="text-blue-500 hover:text-blue-700 transition-smooth">
+                            <i class="fab fa-telegram h-4 w-4"></i>
+                        </a>
+
+                        <!-- Facebook -->
+                        <a href="#" class="text-blue-700 hover:text-blue-900 transition-smooth">
+                            <i class="fab fa-facebook-f h-4 w-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const contactReasonSelect = document.getElementById('contact-reason');
+        const musicFields = document.getElementById('music-fields');
+        
+        // References to the music input fields
+        const artistNameInput = document.getElementById('artist-name');
+        const songTitleInput = document.getElementById('song-title');
+        const musicLinkInput = document.getElementById('music-link');
+
+        contactReasonSelect.addEventListener('change', function () {
+            if (this.value === 'music-submission') {
+                // Show music fields and make them required
+                musicFields.classList.remove('hidden');
+                artistNameInput.required = true;
+                songTitleInput.required = true;
+                musicLinkInput.required = true;
+            } else {
+                // Hide music fields and make them not required
+                musicFields.classList.add('hidden');
+                artistNameInput.required = false;
+                songTitleInput.required = false;
+                musicLinkInput.required = false;
+            }
+        });
+    });
+</script>
+
+</body>
+</html>```
